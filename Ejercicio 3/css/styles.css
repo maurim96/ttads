@@ -1,0 +1,58 @@
+.container {
+  background-color: #fee;
+}
+.header {
+  background-color: lightgray;
+}
+.footer {
+  background-color: lightgreen;
+}
+nav {
+    float: left;
+    width: 25%;
+    border: 3px solid #aff;
+    background-color: #eff;
+
+    }
+section {
+margin-left: 26%;
+border: 3px solid gray;
+background-color: #efe;
+}
+@media print {
+    nav {
+      display: none;
+    }
+    .container, .header, .footer, section {
+      background-color: white;
+    }
+  }
+@media only screen
+    and (max-width: 480px)  {
+      section {
+        float:left;
+        width: auto;
+        margin-left: 0;
+      }
+      nav {
+        float: left;
+        width: 100%
+      }
+      .header {
+        width: auto;
+      }
+      .footer {
+        width: auto;
+      }
+      .container {
+        width: auto;
+      }
+}
+@media only screen
+  and (min-width: 1200px) {
+    html {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
